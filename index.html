@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="YGO Archive" />
+  <meta name="theme-color" content="#0a0d14" />
+  <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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" />
+  <link rel="icon" type="image/png" sizes="180x180" href="data:image/png;base64,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" />
+  <title>Millennium Archive — Complete Yu-Gi-Oh! Card Database</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <style>
+    :root {
+      --bg-base: #0a0d14;
+      --bg-surface: #121722;
+      --bg-elevated: #1a2130;
+      --border-subtle: #263044;
+      --gold: #e5b84b;
+      --gold-dim: #9e7b28;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-base);
+      color: #e6edf7;
+      font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -webkit-tap-highlight-color: transparent;
+      padding-bottom: env(safe-area-inset-bottom);
+      overflow-x: hidden;
+    }
+    header {
+      padding-top: env(safe-area-inset-top);
+    }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #0f141e; }
+    ::-webkit-scrollbar-thumb { background: #2b364d; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #3c4b6b; }
+
+    /* Card Frame Accent Colors */
+    .frame-normal { border-color: #d4a64a; --frame-glow: rgba(212, 166, 74, 0.25); --frame-badge: #a67c2e; }
+    .frame-effect { border-color: #c76b3c; --frame-glow: rgba(199, 107, 60, 0.25); --frame-badge: #9c4c24; }
+    .frame-ritual { border-color: #4f7ec4; --frame-glow: rgba(79, 126, 196, 0.28); --frame-badge: #355b96; }
+    .frame-fusion { border-color: #9b51b8; --frame-glow: rgba(155, 81, 184, 0.28); --frame-badge: #763691; }
+    .frame-synchro { border-color: #dce3ec; --frame-glow: rgba(220, 227, 236, 0.25); --frame-badge: #64748b; }
+    .frame-xyz { border-color: #475569; --frame-glow: rgba(148, 163, 184, 0.2); --frame-badge: #1e293b; }
+    .frame-link { border-color: #1968b3; --frame-glow: rgba(25, 104, 179, 0.3); --frame-badge: #0f4c8a; }
+    .frame-spell { border-color: #1c9c82; --frame-glow: rgba(28, 156, 130, 0.28); --frame-badge: #13735f; }
+    .frame-trap { border-color: #b53b7f; --frame-glow: rgba(181, 59, 127, 0.28); --frame-badge: #87265c; }
+    .frame-token { border-color: #64748b; --frame-glow: rgba(100, 116, 139, 0.22); --frame-badge: #475569; }
+    .frame-skill { border-color: #2563eb; --frame-glow: rgba(37, 99, 235, 0.28); --frame-badge: #1d4ed8; }
+    .frame-pendulum {
+      border-color: #2aa387;
+      --frame-glow: rgba(42, 163, 135, 0.25);
+      --frame-badge: #1d7a64;
+    }
+
+    .card-tile {
+      transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+    }
+    .card-tile:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px -6px var(--frame-glow, rgba(229, 184, 75, 0.22));
+    }
+
+    /* Attribute Badges */
+    .attr-DARK { background: #4c1d95; color: #ede9fe; border-color: #7c3aed; }
+    .attr-LIGHT { background: #854d0e; color: #fef9c3; border-color: #eab308; }
+    .attr-EARTH { background: #713f12; color: #fef3c7; border-color: #d97706; }
+    .attr-WATER { background: #075985; color: #e0f2fe; border-color: #0ea5e9; }
+    .attr-FIRE { background: #991b1b; color: #fee2e2; border-color: #ef4444; }
+    .attr-WIND { background: #065f46; color: #d1fae5; border-color: #10b981; }
+    .attr-DIVINE { background: #78350f; color: #fde68a; border-color: #f59e0b; }
+
+    /* Banlist Badges */
+    .ban-0 { background: #991b1b; color: #fecaca; border: 1px solid #ef4444; }
+    .ban-1 { background: #9a3412; color: #fed7aa; border: 1px solid #f97316; }
+    .ban-2 { background: #854d0e; color: #fef08a; border: 1px solid #eab308; }
+
+    /* Link Marker Grid */
+    .link-arrow-btn {
+      width: 28px; height: 28px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 6px;
+      border: 1px solid #2b364d;
+      background: #121722;
+      color: #64748b;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.12s ease;
+    }
+    .link-arrow-btn.active {
+      background: #1968b3;
+      border-color: #60a5fa;
+      color: #ffffff;
+      box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+    }
+
+    @keyframes pulse-gold {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+    .loading-pulse { animation: pulse-gold 1.5s ease-in-out infinite; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-[#0a0d14] text-slate-100">
+
+  <!-- Top Navigation Header -->
+  <header class="sticky top-0 z-30 border-b border-slate-800/90 bg-[#0d111a]/95 backdrop-blur-md">
+    <div class="max-w-[1600px] mx-auto px-3 sm:px-5 py-2.5 flex items-center justify-between gap-2 flex-wrap">
+      <!-- Brand -->
+      <div class="flex items-center gap-2.5 min-w-0">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-amber-400 via-yellow-500 to-amber-700 flex items-center justify-center shadow-lg shadow-amber-500/20 shrink-0">
+          <svg viewBox="0 0 24 24" class="w-5 h-5 text-slate-950" fill="currentColor">
+            <path d="M12 2L2 20h20L12 2zm0 4.5L17.8 17H6.2L12 6.5zm0 4.2a2.3 2.3 0 100 4.6 2.3 2.3 0 000-4.6z"/>
+          </svg>
+        </div>
+        <div class="min-w-0">
+          <div class="flex items-center gap-2">
+            <h1 class="text-base sm:text-lg font-extrabold tracking-tight text-white truncate">Millennium Archive</h1>
+            <span id="dbCountBadge" class="hidden sm:inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-amber-500/15 text-amber-300 border border-amber-500/30">
+              Loading...
+            </span>
+          </div>
+          <p class="text-[11px] text-slate-400 truncate hidden sm:block">Every Yu-Gi-Oh! Card Ever Created · YGOPRODeck v7</p>
+        </div>
+      </div>
+
+      <!-- Search Bar (Desktop & Tablet) -->
+      <div class="flex-1 max-w-xl min-w-[200px] order-3 lg:order-2 w-full lg:w-auto">
+        <div class="relative">
+          <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="Search card name, effect text, archetype, passcode, or set code..."
+            class="w-full bg-[#141a26] border border-slate-700/80 focus:border-amber-400 focus:ring-1 focus:ring-amber-400/40 rounded-lg pl-9 pr-20 py-2 text-sm text-slate-100 placeholder-slate-400 outline-none transition"
+          />
+          <button
+            id="clearSearchBtn"
+            class="hidden absolute right-2.5 top-1/2 -translate-y-1/2 text-xs text-slate-400 hover:text-white px-2 py-0.5 rounded bg-slate-800"
+            type="button"
+          >Clear</button>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-1.5 sm:gap-2 order-2 lg:order-3">
+        <button id="randomCardBtn" type="button" title="Open a Random Card"
+          class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-slate-800/90 hover:bg-slate-700 border border-slate-700 text-xs font-medium text-slate-200 transition cursor-pointer">
+          <i data-lucide="dices" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span class="hidden sm:inline">Random</span>
+        </button>
+
+        <button id="statsBtn" type="button" title="Database Statistics"
+          class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-slate-800/90 hover:bg-slate-700 border border-slate-700 text-xs font-medium text-slate-200 transition cursor-pointer">
+          <i data-lucide="bar-chart-3" class="w-3.5 h-3.5 text-sky-400"></i>
+          <span class="hidden md:inline">Stats</span>
+        </button>
+
+        <button id="deckDrawerBtn" type="button" title="Deck Builder & Favorites"
+          class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/40 text-xs font-semibold text-amber-300 transition cursor-pointer">
+          <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+          <span>Deck</span>
+          <span id="deckCountPill" class="px-1.5 py-0.2 rounded bg-amber-500 text-slate-950 text-[10px] font-bold">0</span>
+        </button>
+
+        <button id="refreshDbBtn" type="button" title="Sync Latest Cards from API"
+          class="inline-flex items-center justify-center p-1.5 rounded-lg bg-slate-800/90 hover:bg-slate-700 border border-slate-700 text-slate-300 transition cursor-pointer">
+          <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
+        </button>
+
+        <button id="mobileFilterToggle" type="button"
+          class="lg:hidden inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-indigo-600/90 hover:bg-indigo-500 text-xs font-semibold text-white transition cursor-pointer">
+          <i data-lucide="sliders-horizontal" class="w-3.5 h-3.5"></i>
+          <span>Filters</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Quick Category Tabs -->
+    <div class="max-w-[1600px] mx-auto px-3 sm:px-5 pb-2 flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+      <button data-tab="all" class="tab-btn px-3 py-1 rounded-md text-xs font-semibold bg-amber-500 text-slate-950 whitespace-nowrap cursor-pointer">All Cards</button>
+      <button data-tab="monster" class="tab-btn px-3 py-1 rounded-md text-xs font-medium bg-slate-800/80 text-slate-300 hover:bg-slate-700 whitespace-nowrap cursor-pointer">Monsters</button>
+      <button data-tab="spell" class="tab-btn px-3 py-1 rounded-md text-xs font-medium bg-slate-800/80 text-slate-300 hover:bg-slate-700 whitespace-nowrap cursor-pointer">Spells</button>
+      <button data-tab="trap" class="tab-btn px-3 py-1 rounded-md text-xs font-medium bg-slate-800/80 text-slate-300 hover:bg-slate-700 whitespace-nowrap cursor-pointer">Traps</button>
+      <button data-tab="extra" class="tab-btn px-3 py-1 rounded-md text-xs font-medium bg-slate-800/80 text-slate-300 hover:bg-slate-700 whitespace-nowrap cursor-pointer">Extra Deck</button>
+      <button data-tab="pendulum" class="tab-btn px-3 py-1 rounded-md text-xs font-medium bg-slate-800/80 text-slate-300 hover:bg-slate-700 whitespace-nowrap cursor-pointer">Pendulum</button>
+      <button data-tab="banlist" class="tab-btn px-3 py-1 rounded-md text-xs font-medium bg-slate-800/80 text-slate-300 hover:bg-slate-700 whitespace-nowrap cursor-pointer">Forbidden / Limited</button>
+      <button data-tab="favorites" class="tab-btn px-3 py-1 rounded-md text-xs font-medium bg-slate-800/80 text-slate-300 hover:bg-slate-700 whitespace-nowrap cursor-pointer inline-flex items-center gap-1">
+        <i data-lucide="star" class="w-3 h-3 text-amber-400"></i> Favorites (<span id="favTabCount">0</span>)
+      </button>
+    </div>
+  </header>
+
+  <!-- Status / Loading Banner -->
+  <div id="statusBanner" class="bg-[#121826] border-b border-slate-800 px-4 py-2.5 text-xs">
+    <div class="max-w-[1600px] mx-auto flex items-center justify-between gap-3 flex-wrap">
+      <div class="flex items-center gap-2.5">
+        <div id="statusSpinner" class="w-4 h-4 rounded-full border-2 border-amber-400 border-t-transparent animate-spin"></div>
+        <span id="statusText" class="text-slate-300 font-medium">Connecting to YGOPRODeck API to download the complete Yu-Gi-Oh! card database...</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <button id="retryFetchBtn" type="button" class="hidden px-2.5 py-1 rounded bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold cursor-pointer">Retry Live Sync</button>
+        <label class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 cursor-pointer">
+          Import JSON
+          <input id="jsonImportInput" type="file" accept=".json,application/json" class="hidden" />
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Workspace -->
+  <div class="flex-1 max-w-[1600px] w-full mx-auto flex relative">
+
+    <!-- Filter Sidebar (Desktop sticky, Mobile slide-over) -->
+    <aside id="filterSidebar" class="hidden lg:block w-72 xl:w-80 shrink-0 border-r border-slate-800/90 bg-[#0d111a] p-4 space-y-4 overflow-y-auto lg:sticky lg:top-[104px] lg:max-h-[calc(100vh-104px)] z-20">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-amber-400 flex items-center gap-1.5">
+          <i data-lucide="filter" class="w-3.5 h-3.5"></i> Advanced Filters
+        </h2>
+        <div class="flex items-center gap-2">
+          <button id="resetFiltersBtn" type="button" class="text-xs text-slate-400 hover:text-white underline cursor-pointer">Reset All</button>
+          <button id="closeMobileFilterBtn" type="button" class="lg:hidden p-1 rounded bg-slate-800 text-slate-300 cursor-pointer">
+            <i data-lucide="x" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card Type -->
+      <div>
+        <label class="block text-[11px] font-semibold text-slate-400 mb-1">Card Type</label>
+        <select id="filterType" class="w-full bg-[#141a26] border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-100 outline-none focus:border-amber-400">
+          <option value="">All Card Types</option>
+        </select>
+      </div>
+
+      <!-- Attribute -->
+      <div>
+        <label class="block text-[11px] font-semibold text-slate-400 mb-1.5">Attribute</label>
+        <div id="attributePills" class="flex flex-wrap gap-1.5">
+          <button type="button" data-attr="DARK" class="attr-filter-btn px-2 py-1 rounded text-[11px] font-semibold border border-slate-700 bg-slate-800/70 text-slate-300 cursor-pointer">DARK</button>
+          <button type="button" data-attr="LIGHT" class="attr-filter-btn px-2 py-1 rounded text-[11px] font-semibold border border-slate-700 bg-slate-800/70 text-slate-300 cursor-pointer">LIGHT</button>
+          <button type="button" data-attr="EARTH" class="attr-filter-btn px-2 py-1 rounded text-[11px] font-semibold border border-slate-700 bg-slate-800/70 text-slate-300 cursor-pointer">EARTH</button>
+          <button type="button" data-attr="WATER" class="attr-filter-btn px-2 py-1 rounded text-[11px] font-semibold border border-slate-700 bg-slate-800/70 text-slate-300 cursor-pointer">WATER</button>
+          <button type="button" data-attr="FIRE" class="attr-filter-btn px-2 py-1 rounded text-[11px] font-semibold border border-slate-700 bg-slate-800/70 text-slate-300 cursor-pointer">FIRE</button>
+          <button type="button" data-attr="WIND" class="attr-filter-btn px-2 py-1 rounded text-[11px] font-semibold border border-slate-700 bg-slate-800/70 text-slate-300 cursor-pointer">WIND</button>
+          <button type="button" data-attr="DIVINE" class="attr-filter-btn px-2 py-1 rounded text-[11px] font-semibold border border-slate-700 bg-slate-800/70 text-slate-300 cursor-pointer">DIVINE</button>
+        </div>
+      </div>
+
+      <!-- Race / Monster Type / Spell-Trap Subtype -->
+      <div>
+        <label class="block text-[11px] font-semibold text-slate-400 mb-1">Monster Type / Spell-Trap Icon</label>
+        <select id="filterRace" class="w-full bg-[#141a26] border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-100 outline-none focus:border-amber-400">
+          <option value="">All Types / Subtypes</option>
+        </select>
+      </div>
+
+      <!-- Archetype -->
+      <div>
+        <label class="block text-[11px] font-semibold text-slate-400 mb-1">Archetype</label>
+        <select id="filterArchetype" class="w-full bg-[#141a26] border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-100 outline-none focus:border-amber-400">
+          <option value="">All Archetypes</option>
+        </select>
+      </div>
+
+      <!-- Level / Rank / Link Rating -->
+      <div class="grid grid-cols-2 gap-2">
+        <div>
+          <label class="block text-[11px] font-semibold text-slate-400 mb-1">Level/Rank Min</label>
+          <input id="filterLevelMin" type="number" min="0" max="13" placeholder="0" class="w-full bg-[#141a26] border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-100 outline-none focus:border-amber-400" />
+        </div>
+        <div>
+          <label class="block text-[11px] font-semibold text-slate-400 mb-1">Level/Rank Max</label>
+          <input id="filterLevelMax" type="number" min="0" max="13" placeholder="13" class="w-full bg-[#141a26] border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-100 outline-none focus:border-amber-400" />
+        </div>
+      </div>
+
+      <!-- ATK & DEF Ranges -->
+      <div class="grid grid-cols-2 gap-2">
+        <div>
+          <label class="block text-[11px] font-semibold text-slate-400 mb-1">ATK Min</label>
+          <input id="filterAtkMin" type="number" min="0" step="100" placeholder="0" class="w-full bg-[#141a26] border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-100 outline-none focus:border-amber-400" />
+        </div>
+        <div>
+          <label class="block text-[11px] font-semibold text-slate-400 mb-1">ATK Max</label>
+          <input id="filterAtkMax" type="number" min="0" step="100" placeholder="5000" class="w-full bg-[#141a26] border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-100 outline-none focus:border-amber-400" />
+        </div>
+        <div>
+          <label class="block text-[11px] font-semibold text-slate-400 mb-1">DEF Min</label>
+          <input id="filterDefMin" type="number" min="0" step="100" placeholder="0" class="w-full bg-[#141a26] border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-100 outline-none focus:border-amber-400" />
+        </div>
+        <div>
+          <label class="block text-[11px] font-semibold text-slate-400 mb-1">DEF Max</label>
+          <input id="filterDefMax" type="number" min="0" step="100" placeholder="5000" class="w-full bg-[#141a26] border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-100 outline-none focus:border-amber-400" />
+        </div>
+      </div>
+
+      <!-- Pendulum Scale -->
+      <div class="grid grid-cols-2 gap-2">
+        <div>
+          <label class="block text-[11px] font-semibold text-slate-400 mb-1">Scale Min</label>
+          <input id="filterScaleMin" type="number" min="0" max="13" placeholder="0" class="w-full bg-[#141a26] border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-100 outline-none focus:border-amber-400" />
+        </div>
+        <div>
+          <label class="block text-[11px] font-semibold text-slate-400 mb-1">Scale Max</label>
+          <input id="filterScaleMax" type="number" min="0" max="13" placeholder="13" class="w-full bg-[#141a26] border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-100 outline-none focus:border-amber-400" />
+        </div>
+      </div>
+
+      <!-- Link Markers -->
+      <div>
+        <label class="block text-[11px] font-semibold text-slate-400 mb-1.5">Link Arrows</label>
+        <div class="inline-grid grid-cols-3 gap-1.5 p-2 rounded-lg bg-[#141a26] border border-slate-800">
+          <button type="button" data-link="Top-Left" class="link-arrow-btn" title="Top-Left">↖</button>
+          <button type="button" data-link="Top" class="link-arrow-btn" title="Top">↑</button>
+          <button type="button" data-link="Top-Right" class="link-arrow-btn" title="Top-Right">↗</button>
+          <button type="button" data-link="Left" class="link-arrow-btn" title="Left">←</button>
+          <div class="w-7 h-7 flex items-center justify-center text-[10px] font-bold text-slate-500">LNK</div>
+          <button type="button" data-link="Right" class="link-arrow-btn" title="Right">→</button>
+          <button type="button" data-link="Bottom-Left" class="link-arrow-btn" title="Bottom-Left">↙</button>
+          <button type="button" data-link="Bottom" class="link-arrow-btn" title="Bottom">↓</button>
+          <button type="button" data-link="Bottom-Right" class="link-arrow-btn" title="Bottom-Right">↘</button>
+        </div>
+      </div>
+
+      <!-- Format & Banlist -->
+      <div class="space-y-2 pt-1 border-t border-slate-800">
+        <div>
+          <label class="block text-[11px] font-semibold text-slate-400 mb-1">Format Legality</label>
+          <select id="filterFormat" class="w-full bg-[#141a26] border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-100 outline-none focus:border-amber-400">
+            <option value="">All Formats</option>
+            <option value="tcg">TCG</option>
+            <option value="ocg">OCG</option>
+            <option value="master duel">Master Duel</option>
+            <option value="goat">GOAT Format</option>
+            <option value="speed duel">Speed Duel</option>
+            <option value="rush duel">Rush Duel</option>
+            <option value="duel links">Duel Links</option>
+          </select>
+        </div>
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="block text-[11px] font-semibold text-slate-400 mb-1">Banlist</label>
+            <select id="filterBanSystem" class="w-full bg-[#141a26] border border-slate-700 rounded-lg px-2 py-1.5 text-xs text-slate-100 outline-none">
+              <option value="ban_tcg">TCG</option>
+              <option value="ban_ocg">OCG</option>
+              <option value="ban_goat">GOAT</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-[11px] font-semibold text-slate-400 mb-1">Status</label>
+            <select id="filterBanStatus" class="w-full bg-[#141a26] border border-slate-700 rounded-lg px-2 py-1.5 text-xs text-slate-100 outline-none">
+              <option value="">Any</option>
+              <option value="Forbidden">Forbidden (0)</option>
+              <option value="Limited">Limited (1)</option>
+              <option value="Semi-Limited">Semi-Limited (2)</option>
+              <option value="Unlimited">Unlimited (3)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Results Area -->
+    <main class="flex-1 min-w-0 p-3 sm:p-5 flex flex-col gap-4">
+
+      <!-- Results Toolbar -->
+      <div class="flex items-center justify-between gap-3 flex-wrap bg-[#111622] border border-slate-800/90 rounded-xl px-3.5 py-2.5">
+        <div class="flex items-center gap-2 text-xs sm:text-sm">
+          <span class="text-slate-400">Showing</span>
+          <span id="resultCount" class="font-bold text-amber-400">0</span>
+          <span class="text-slate-400">cards</span>
+          <span id="activeFilterSummary" class="text-xs text-slate-500 hidden sm:inline"></span>
+        </div>
+
+        <div class="flex items-center gap-2 flex-wrap">
+          <!-- Sort -->
+          <select id="sortSelect" class="bg-[#161d2c] border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-200 outline-none focus:border-amber-400">
+            <option value="name_asc">Name (A → Z)</option>
+            <option value="name_desc">Name (Z → A)</option>
+            <option value="atk_desc">ATK (High → Low)</option>
+            <option value="atk_asc">ATK (Low → High)</option>
+            <option value="def_desc">DEF (High → Low)</option>
+            <option value="level_desc">Level/Rank (High → Low)</option>
+            <option value="date_desc">Release Date (Newest)</option>
+            <option value="date_asc">Release Date (Oldest)</option>
+            <option value="price_desc">TCGplayer Price (High → Low)</option>
+            <option value="views_desc">Most Viewed</option>
+            <option value="id_asc">Passcode ID</option>
+          </select>
+
+          <!-- Page Size -->
+          <select id="pageSizeSelect" class="bg-[#161d2c] border border-slate-700 rounded-lg px-2 py-1.5 text-xs text-slate-200 outline-none">
+            <option value="24">24 / page</option>
+            <option value="48" selected>48 / page</option>
+            <option value="96">96 / page</option>
+          </select>
+
+          <!-- View Toggle -->
+          <div class="inline-flex rounded-lg border border-slate-700 bg-[#161d2c] p-0.5">
+            <button id="viewGridBtn" type="button" title="Grid View" class="px-2 py-1 rounded-md bg-amber-500 text-slate-950 text-xs font-semibold cursor-pointer">
+              <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i>
+            </button>
+            <button id="viewListBtn" type="button" title="Table View" class="px-2 py-1 rounded-md text-slate-400 hover:text-white text-xs font-semibold cursor-pointer">
+              <i data-lucide="list" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards Container -->
+      <div id="cardsContainer" class="min-h-[360px]"></div>
+
+      <!-- Empty State -->
+      <div id="emptyState" class="hidden flex-col items-center justify-center py-16 text-center bg-[#111622] border border-slate-800 rounded-xl">
+        <i data-lucide="search-x" class="w-10 h-10 text-slate-500 mb-3"></i>
+        <h3 class="text-base font-semibold text-slate-200">No cards match your current filters</h3>
+        <p class="text-xs text-slate-400 mt-1 max-w-md">Try clearing a few filters or searching by a broader card name, archetype, or effect keyword.</p>
+        <button id="emptyResetBtn" type="button" class="mt-4 px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold cursor-pointer">Reset Filters</button>
+      </div>
+
+      <!-- Pagination -->
+      <div id="paginationBar" class="flex items-center justify-between gap-2 flex-wrap bg-[#111622] border border-slate-800/90 rounded-xl px-3.5 py-2.5 text-xs">
+        <div id="pageInfo" class="text-slate-400">Page 1 of 1</div>
+        <div id="pageButtons" class="flex items-center gap-1 flex-wrap"></div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Card Detail Modal -->
+  <div id="cardModal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-2 sm:p-5">
+    <div class="bg-[#111622] border border-slate-700/90 rounded-2xl max-w-4xl w-full max-h-[92vh] flex flex-col overflow-hidden shadow-2xl">
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between px-4 sm:px-6 py-3.5 border-b border-slate-800 bg-[#0d111a]">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <span id="modalFrameBadge" class="px-2 py-0.5 rounded text-[11px] font-bold uppercase tracking-wide text-white shrink-0"></span>
+          <h2 id="modalCardName" class="text-base sm:text-xl font-extrabold text-white truncate"></h2>
+        </div>
+        <div class="flex items-center gap-2 shrink-0">
+          <button id="modalFavBtn" type="button" title="Toggle Favorite" class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 cursor-pointer">
+            <i data-lucide="star" class="w-4 h-4"></i>
+          </button>
+          <button id="closeCardModalBtn" type="button" class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 cursor-pointer">
+            <i data-lucide="x" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Body -->
+      <div id="modalBody" class="p-4 sm:p-6 overflow-y-auto grid grid-cols-1 md:grid-cols-12 gap-5">
+        <!-- Left: Card Artwork + Alt Arts + Quick Actions -->
+        <div class="md:col-span-5 flex flex-col items-center gap-3">
+          <div class="relative w-full max-w-[300px] rounded-xl overflow-hidden border border-slate-700 bg-slate-900 shadow-xl">
+            <img id="modalCardImg" src="" alt="Card Artwork" class="w-full h-auto block" />
+          </div>
+          <div id="modalAltArts" class="flex flex-wrap justify-center gap-1.5"></div>
+          <div class="flex flex-wrap justify-center gap-2 w-full">
+            <button id="toggleCropBtn" type="button" class="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs text-slate-200 cursor-pointer">Cropped Art</button>
+            <button id="copyPasscodeBtn" type="button" class="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs text-slate-200 cursor-pointer">Copy Passcode</button>
+            <button id="addToDeckModalBtn" type="button" class="px-3 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold cursor-pointer">+ Add to Deck</button>
+          </div>
+          <a id="modalExternalLink" href="#" target="_blank" rel="noopener noreferrer" class="text-xs text-amber-400 hover:text-amber-300 underline inline-flex items-center gap-1">
+            View on YGOPRODeck <i data-lucide="external-link" class="w-3 h-3"></i>
+          </a>
+        </div>
+
+        <!-- Right: Card Stats, Text, Banlist, Prices, Sets -->
+        <div class="md:col-span-7 space-y-4 text-sm">
+          <div id="modalMetaGrid" class="grid grid-cols-2 sm:grid-cols-3 gap-2"></div>
+
+          <div id="modalLinkDiagram" class="hidden items-center gap-3 p-2.5 rounded-xl bg-[#161d2c] border border-slate-800"></div>
+
+          <div class="bg-[#161d2c] border border-slate-800 rounded-xl p-3.5">
+            <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">Card Text / Effect</div>
+            <p id="modalCardDesc" class="text-xs sm:text-sm text-slate-200 whitespace-pre-line leading-relaxed"></p>
+          </div>
+
+          <div id="modalBanlistRow" class="hidden flex-wrap gap-2"></div>
+
+          <div id="modalPricesBox" class="bg-[#161d2c] border border-slate-800 rounded-xl p-3.5">
+            <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2">Market Prices (Lowest Print)</div>
+            <div id="modalPricesGrid" class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs"></div>
+          </div>
+
+          <div id="modalSetsBox" class="bg-[#161d2c] border border-slate-800 rounded-xl p-3.5">
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Card Sets & Printings (<span id="modalSetsCount">0</span>)</span>
+              <input id="modalSetSearch" type="text" placeholder="Filter sets..." class="bg-[#0d111a] border border-slate-700 rounded px-2 py-0.5 text-xs text-slate-200 outline-none w-36" />
+            </div>
+            <div id="modalSetsList" class="max-h-44 overflow-y-auto divide-y divide-slate-800/80 text-xs"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Deck Builder Drawer -->
+  <div id="deckDrawer" class="hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex justify-end">
+    <div class="w-full max-w-md bg-[#101521] border-l border-slate-800 h-full flex flex-col shadow-2xl">
+      <div class="px-4 py-3.5 border-b border-slate-800 flex items-center justify-between bg-[#0c1019]">
+        <div>
+          <h2 class="text-base font-bold text-white flex items-center gap-2">
+            <i data-lucide="layers" class="w-4 h-4 text-amber-400"></i> Deck Builder
+          </h2>
+          <p class="text-[11px] text-slate-400">Main (40–60) · Extra (0–15) · Side (0–15)</p>
+        </div>
+        <button id="closeDeckDrawerBtn" type="button" class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 cursor-pointer">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <div class="px-4 py-2.5 border-b border-slate-800 flex items-center justify-between gap-2 bg-[#131927]">
+        <div class="flex items-center gap-1.5 text-xs">
+          <button data-deck-target="main" class="deck-target-btn px-2.5 py-1 rounded bg-amber-500 text-slate-950 font-bold cursor-pointer">Main (<span id="mainCount">0</span>)</button>
+          <button data-deck-target="extra" class="deck-target-btn px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-medium cursor-pointer">Extra (<span id="extraCount">0</span>)</button>
+          <button data-deck-target="side" class="deck-target-btn px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-medium cursor-pointer">Side (<span id="sideCount">0</span>)</button>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <button id="exportYdkBtn" type="button" class="px-2.5 py-1 rounded bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold cursor-pointer">Export .ydk</button>
+          <button id="clearDeckBtn" type="button" class="px-2 py-1 rounded bg-rose-900/60 hover:bg-rose-800 text-rose-200 text-xs cursor-pointer">Clear</button>
+        </div>
+      </div>
+
+      <div id="deckListBody" class="flex-1 overflow-y-auto p-3 space-y-1.5"></div>
+    </div>
+  </div>
+
+  <!-- Stats Modal -->
+  <div id="statsModal" class="hidden fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-[#111622] border border-slate-700 rounded-2xl max-w-2xl w-full p-5 space-y-4 shadow-2xl max-h-[88vh] overflow-y-auto">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <h2 class="text-base font-bold text-white flex items-center gap-2">
+          <i data-lucide="bar-chart-3" class="w-4 h-4 text-sky-400"></i> Database Breakdown
+        </h2>
+        <button id="closeStatsModalBtn" type="button" class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 cursor-pointer">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+      <div id="statsBody" class="space-y-4 text-xs"></div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toast" class="hidden fixed bottom-5 right-5 z-[60] px-4 py-2.5 rounded-xl bg-slate-900 border border-amber-500/50 text-xs font-semibold text-amber-200 shadow-2xl"></div>
+
+<script>
+(() => {
+  // Fallback sample dataset (only used if live API cannot be reached)
+  const FALLBACK_CARDS = [
+    {
+      id: 46986414, name: "Dark Magician", type: "Normal Monster", frameType: "normal",
+      desc: "The ultimate wizard in terms of attack and defense.",
+      atk: 2500, def: 2100, level: 7, race: "Spellcaster", attribute: "DARK", archetype: "Dark Magician",
+      ygoprodeck_url: "https://ygoprodeck.com/card/dark-magician-4003",
+      card_images: [{ id: 46986414, image_url: "https://images.ygoprodeck.com/images/cards/46986414.jpg", image_url_small: "https://images.ygoprodeck.com/images/cards_small/46986414.jpg", image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/46986414.jpg" }],
+      card_prices: [{ tcgplayer_price: "0.35", cardmarket_price: "0.20" }]
+    },
+    {
+      id: 89631139, name: "Blue-Eyes White Dragon", type: "Normal Monster", frameType: "normal",
+      desc: "This legendary dragon is a powerful engine of destruction. Virtually invincible, very few have faced this awesome creature and lived to tell the tale.",
+      atk: 3000, def: 2500, level: 8, race: "Dragon", attribute: "LIGHT", archetype: "Blue-Eyes",
+      ygoprodeck_url: "https://ygoprodeck.com/card/blue-eyes-white-dragon-7485",
+      card_images: [{ id: 89631139, image_url: "https://images.ygoprodeck.com/images/cards/89631139.jpg", image_url_small: "https://images.ygoprodeck.com/images/cards_small/89631139.jpg", image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/89631139.jpg" }],
+      card_prices: [{ tcgplayer_price: "0.49", cardmarket_price: "0.30" }]
+    },
+    {
+      id: 6983839, name: "Tornado Dragon", type: "XYZ Monster", frameType: "xyz",
+      desc: "2 Level 4 monsters\nOnce per turn (Quick Effect): You can detach 1 material from this card, then target 1 Spell/Trap on the field; destroy it.",
+      atk: 2100, def: 2000, level: 4, race: "Wyrm", attribute: "WIND",
+      ygoprodeck_url: "https://ygoprodeck.com/card/tornado-dragon-8410",
+      card_images: [{ id: 6983839, image_url: "https://images.ygoprodeck.com/images/cards/6983839.jpg", image_url_small: "https://images.ygoprodeck.com/images/cards_small/6983839.jpg", image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/6983839.jpg" }],
+      card_sets: [{ set_name: "Maximum Crisis", set_code: "MACR-EN081", set_rarity: "Secret Rare", set_price: "4.32" }],
+      card_prices: [{ tcgplayer_price: "0.48", cardmarket_price: "0.42" }]
+    },
+    {
+      id: 14558127, name: "Ash Blossom & Joyous Spring", type: "Tuner Monster", frameType: "effect",
+      desc: "When a card or effect is activated that includes any of these effects (Quick Effect): You can discard this card; negate that effect.\n● Add a card from the Deck to the hand.\n● Special Summon from the Deck.\n● Send a card from the Deck to the GY.\nYou can only use this effect of \"Ash Blossom & Joyous Spring\" once per turn.",
+      atk: 0, def: 1800, level: 3, race: "Zombie", attribute: "FIRE",
+      ygoprodeck_url: "https://ygoprodeck.com/card/ash-blossom-joyous-spring-8522",
+      card_images: [{ id: 14558127, image_url: "https://images.ygoprodeck.com/images/cards/14558127.jpg", image_url_small: "https://images.ygoprodeck.com/images/cards_small/14558127.jpg", image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/14558127.jpg" }],
+      card_prices: [{ tcgplayer_price: "3.50", cardmarket_price: "2.90" }]
+    },
+    {
+      id: 1861629, name: "Decode Talker", type: "Link Monster", frameType: "link",
+      desc: "2+ Effect Monsters\nGains 500 ATK for each monster it points to. When your opponent activates a card or effect that targets a card(s) you control (Quick Effect): You can Tribute 1 monster this card points to; negate the activation, and if you do, destroy that card.",
+      atk: 2300, linkval: 3, linkmarkers: ["Top", "Bottom-Left", "Bottom-Right"], race: "Cyberse", attribute: "DARK", archetype: "Code Talker",
+      ygoprodeck_url: "https://ygoprodeck.com/card/decode-talker-8616",
+      card_images: [{ id: 1861629, image_url: "https://images.ygoprodeck.com/images/cards/1861629.jpg", image_url_small: "https://images.ygoprodeck.com/images/cards_small/1861629.jpg", image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/1861629.jpg" }],
+      card_prices: [{ tcgplayer_price: "0.25", cardmarket_price: "0.15" }]
+    },
+    {
+      id: 55144522, name: "Pot of Greed", type: "Spell Card", frameType: "spell",
+      desc: "Draw 2 cards.",
+      race: "Normal", archetype: "Greed",
+      banlist_info: { ban_tcg: "Forbidden", ban_ocg: "Forbidden", ban_goat: "Limited" },
+      ygoprodeck_url: "https://ygoprodeck.com/card/pot-of-greed-4667",
+      card_images: [{ id: 55144522, image_url: "https://images.ygoprodeck.com/images/cards/55144522.jpg", image_url_small: "https://images.ygoprodeck.com/images/cards_small/55144522.jpg", image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/55144522.jpg" }],
+      card_prices: [{ tcgplayer_price: "2.10", cardmarket_price: "1.50" }]
+    },
+    {
+      id: 44095762, name: "Mirror Force", type: "Trap Card", frameType: "trap",
+      desc: "When an opponent's monster declares an attack: Destroy all your opponent's Attack Position monsters.",
+      race: "Normal", archetype: "Mirror Force",
+      ygoprodeck_url: "https://ygoprodeck.com/card/mirror-force-3774",
+      card_images: [{ id: 44095762, image_url: "https://images.ygoprodeck.com/images/cards/44095762.jpg", image_url_small: "https://images.ygoprodeck.com/images/cards_small/44095762.jpg", image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/44095762.jpg" }],
+      card_prices: [{ tcgplayer_price: "0.40", cardmarket_price: "0.25" }]
+    }
+  ];
+
+  // Inline SVG card-back fallback data URI
+  const CARD_BACK_SVG = "data:image/svg+xml;utf8," + encodeURIComponent(
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 290">
+      <rect width="200" height="290" rx="10" fill="#2a1b12" stroke="#c89b3c" stroke-width="6"/>
+      <rect x="14" y="14" width="172" height="262" rx="6" fill="#4a2c18" stroke="#8c6223" stroke-width="2"/>
+      <ellipse cx="100" cy="145" rx="52" ry="86" fill="#120b07" stroke="#c89b3c" stroke-width="3"/>
+      <text x="100" y="150" text-anchor="middle" fill="#c89b3c" font-family="sans-serif" font-size="13" font-weight="bold">YGO</text>
+    </svg>`
+  );
+
+  // State
+  const state = {
+    allCards: [],
+    filteredCards: [],
+    viewMode: "grid",
+    page: 1,
+    pageSize: 48,
+    filters: {
+      query: "",
+      tab: "all",
+      type: "",
+      attributes: new Set(),
+      race: "",
+      archetype: "",
+      levelMin: "",
+      levelMax: "",
+      atkMin: "",
+      atkMax: "",
+      defMin: "",
+      defMax: "",
+      scaleMin: "",
+      scaleMax: "",
+      linkMarkers: new Set(),
+      format: "",
+      banSystem: "ban_tcg",
+      banStatus: "",
+      sort: "name_asc"
+    },
+    favorites: new Set(),
+    deck: { main: [], extra: [], side: [] },
+    deckTarget: "main",
+    activeModalCard: null,
+    activeModalImgIdx: 0,
+    activeModalCropped: false
+  };
+
+  // DOM helpers
+  const $ = (id) => document.getElementById(id);
+
+  // Load persisted favorites & deck
+  function loadLocalPrefs() {
+    try {
+      const favs = JSON.parse(localStorage.getItem("ygo_favs_v1") || "[]");
+      state.favorites = new Set(favs);
+      const savedDeck = JSON.parse(localStorage.getItem("ygo_deck_v1") || "null");
+      if (savedDeck && savedDeck.main && savedDeck.extra && savedDeck.side) {
+        state.deck = savedDeck;
+      }
+    } catch (_) {}
+    updateFavAndDeckCounts();
+  }
+
+  function saveFavorites() {
+    try {
+      localStorage.setItem("ygo_favs_v1", JSON.stringify([...state.favorites]));
+    } catch (_) {}
+    updateFavAndDeckCounts();
+  }
+
+  function saveDeck() {
+    try {
+      localStorage.setItem("ygo_deck_v1", JSON.stringify(state.deck));
+    } catch (_) {}
+    updateFavAndDeckCounts();
+  }
+
+  function updateFavAndDeckCounts() {
+    $("favTabCount").textContent = state.favorites.size;
+    const total = state.deck.main.length + state.deck.extra.length + state.deck.side.length;
+    $("deckCountPill").textContent = total;
+    $("mainCount").textContent = state.deck.main.length;
+    $("extraCount").textContent = state.deck.extra.length;
+    $("sideCount").textContent = state.deck.side.length;
+  }
+
+  function showToast(msg) {
+    const el = $("toast");
+    el.textContent = msg;
+    el.classList.remove("hidden");
+    clearTimeout(showToast._t);
+    showToast._t = setTimeout(() => el.classList.add("hidden"), 2400);
+  }
+
+  // IndexedDB cache helpers
+  function openDb() {
+    return new Promise((resolve, reject) => {
+      try {
+        const req = indexedDB.open("ygo_millennium_db", 1);
+        req.onupgradeneeded = () => {
+          const db = req.result;
+          if (!db.objectStoreNames.contains("cards")) {
+            db.createObjectStore("cards");
+          }
+        };
+        req.onsuccess = () => resolve(req.result);
+        req.onerror = () => reject(req.error);
+      } catch (e) {
+        reject(e);
+      }
+    });
+  }
+
+  async function idbGet(key) {
+    try {
+      const db = await openDb();
+      return await new Promise((resolve, reject) => {
+        const tx = db.transaction("cards", "readonly");
+        const req = tx.objectStore("cards").get(key);
+        req.onsuccess = () => resolve(req.result);
+        req.onerror = () => reject(req.error);
+      });
+    } catch (_) {
+      return null;
+    }
+  }
+
+  async function idbSet(key, val) {
+    try {
+      const db = await openDb();
+      await new Promise((resolve, reject) => {
+        const tx = db.transaction("cards", "readwrite");
+        const req = tx.objectStore("cards").put(val, key);
+        req.onsuccess = () => resolve();
+        req.onerror = () => reject(req.error);
+      });
+    } catch (_) {}
+  }
+
+  // Status banner helper
+  function setStatus(text, loading = false, showRetry = false) {
+    $("statusText").textContent = text;
+    $("statusSpinner").classList.toggle("hidden", !loading);
+    $("retryFetchBtn").classList.toggle("hidden", !showRetry);
+  }
+
+  // Fetch all cards from YGOPRODeck API v7
+  async function loadDatabase(forceRefresh = false) {
+    setStatus("Checking local cache & YGOPRODeck database...", true, false);
+    if (!forceRefresh) {
+      const cached = await idbGet("all_cards_payload");
+      if (cached && Array.isArray(cached.data) && cached.data.length > 1000) {
+        ingestCards(cached.data);
+        setStatus(`Loaded ${cached.data.length.toLocaleString()} cards from local cache (synced ${new Date(cached.savedAt).toLocaleDateString()}).`, false, false);
+        // Background version check
+        checkRemoteVersion(cached.dbVer);
+        return;
+      }
+    }
+
+    try {
+      setStatus("Downloading every Yu-Gi-Oh! card from YGOPRODeck API v7...", true, false);
+      let res = await fetch("https://db.ygoprodeck.com/api/v7/cardinfo.php?misc=yes");
+      if (!res.ok) {
+        res = await fetch("https://db.ygoprodeck.com/api/v7/cardinfo.php");
+      }
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const json = await res.json();
+      if (!json || !Array.isArray(json.data)) throw new Error("Invalid API payload");
+
+      let dbVer = null;
+      try {
+        const verRes = await fetch("https://db.ygoprodeck.com/api/v7/checkDBVer.php");
+        if (verRes.ok) {
+          const verJson = await verRes.json();
+          dbVer = verJson?.[0]?.database_version || null;
+        }
+      } catch (_) {}
+
+      await idbSet("all_cards_payload", { data: json.data, savedAt: Date.now(), dbVer });
+      ingestCards(json.data);
+      setStatus(`Live database synced: ${json.data.length.toLocaleString()} cards loaded.`, false, false);
+    } catch (err) {
+      if (state.allCards.length === 0) {
+        ingestCards(FALLBACK_CARDS);
+      }
+      setStatus("Could not reach live YGOPRODeck API right now — showing sample cards. Click Retry Live Sync or import a cardinfo.json file.", false, true);
+    }
+  }
+
+  async function checkRemoteVersion(cachedVer) {
+    try {
+      const verRes = await fetch("https://db.ygoprodeck.com/api/v7/checkDBVer.php");
+      if (!verRes.ok) return;
+      const verJson = await verRes.json();
+      const latest = verJson?.[0]?.database_version;
+      if (latest && cachedVer && latest !== cachedVer) {
+        setStatus(`Loaded ${state.allCards.length.toLocaleString()} cached cards. New DB update (${latest}) available — click Refresh to sync.`, false, true);
+      }
+    } catch (_) {}
+  }
+
+  function ingestCards(cards) {
+    // Precompute lowercase search string and helper fields for instant filtering
+    const types = new Set();
+    const races = new Set();
+    const archetypes = new Set();
+
+    for (const c of cards) {
+      types.add(c.type);
+      if (c.race) races.add(c.race);
+      if (c.archetype) archetypes.add(c.archetype);
+      const setCodes = (c.card_sets || []).map(s => s.set_code).join(" ");
+      c._search = `${c.name || ""} ${c.desc || ""} ${c.archetype || ""} ${c.id || ""} ${setCodes}`.toLowerCase();
+      c._tcgDate = c.misc_info?.[0]?.tcg_date || c.misc_info?.[0]?.ocg_date || "0000-00-00";
+      c._views = c.misc_info?.[0]?.views || 0;
+      c._price = parseFloat(c.card_prices?.[0]?.tcgplayer_price || "0") || 0;
+      c._formats = c.misc_info?.[0]?.formats || null;
+    }
+
+    state.allCards = cards;
+    $("dbCountBadge").textContent = `${cards.length.toLocaleString()} Cards`;
+    $("dbCountBadge").classList.remove("hidden");
+
+    populateDropdown("filterType", [...types].sort(), "All Card Types");
+    populateDropdown("filterRace", [...races].sort(), "All Types / Subtypes");
+    populateDropdown("filterArchetype", [...archetypes].sort(), "All Archetypes");
+
+    applyFilters();
+  }
+
+  function populateDropdown(id, items, defaultLabel) {
+    const sel = $(id);
+    const current = sel.value;
+    sel.innerHTML = `<option value="">${defaultLabel}</option>` +
+      items.map(v => `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join("");
+    if (items.includes(current)) sel.value = current;
+  }
+
+  function escapeHtml(str) {
+    return String(str ?? "").replace(/[&<>"']/g, m => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+    }[m]));
+  }
+
+  function getFrameClass(card) {
+    const f = (card.frameType || "").toLowerCase();
+    if (f.includes("pendulum")) return "frame-pendulum";
+    if (f === "normal") return "frame-normal";
+    if (f === "effect") return "frame-effect";
+    if (f === "ritual") return "frame-ritual";
+    if (f === "fusion") return "frame-fusion";
+    if (f === "synchro") return "frame-synchro";
+    if (f === "xyz") return "frame-xyz";
+    if (f === "link") return "frame-link";
+    if (f === "spell") return "frame-spell";
+    if (f === "trap") return "frame-trap";
+    if (f === "token") return "frame-token";
+    if (f === "skill") return "frame-skill";
+    return "frame-effect";
+  }
+
+  function isExtraDeckCard(card) {
+    const t = (card.type || "").toLowerCase();
+    return t.includes("fusion") || t.includes("synchro") || t.includes("xyz") || t.includes("link");
+  }
+
+  // Filtering & Sorting
+  function applyFilters() {
+    const f = state.filters;
+    const q = f.query.trim().toLowerCase();
+    const lMin = f.levelMin !== "" ? Number(f.levelMin) : null;
+    const lMax = f.levelMax !== "" ? Number(f.levelMax) : null;
+    const aMin = f.atkMin !== "" ? Number(f.atkMin) : null;
+    const aMax = f.atkMax !== "" ? Number(f.atkMax) : null;
+    const dMin = f.defMin !== "" ? Number(f.defMin) : null;
+    const dMax = f.defMax !== "" ? Number(f.defMax) : null;
+    const sMin = f.scaleMin !== "" ? Number(f.scaleMin) : null;
+    const sMax = f.scaleMax !== "" ? Number(f.scaleMax) : null;
+
+    const out = state.allCards.filter(c => {
+      if (q && !c._search.includes(q)) return false;
+
+      // Tab filter
+      if (f.tab === "monster" && (!c.type || c.type.includes("Spell") || c.type.includes("Trap") || c.type === "Skill Card" || c.type === "Token")) return false;
+      if (f.tab === "spell" && c.type !== "Spell Card") return false;
+      if (f.tab === "trap" && c.type !== "Trap Card") return false;
+      if (f.tab === "extra" && !isExtraDeckCard(c)) return false;
+      if (f.tab === "pendulum" && !(c.type || "").includes("Pendulum")) return false;
+      if (f.tab === "banlist" && !c.banlist_info) return false;
+      if (f.tab === "favorites" && !state.favorites.has(c.id)) return false;
+
+      if (f.type && c.type !== f.type) return false;
+      if (f.attributes.size > 0 && !f.attributes.has(c.attribute)) return false;
+      if (f.race && c.race !== f.race) return false;
+      if (f.archetype && c.archetype !== f.archetype) return false;
+
+      const lvl = c.level ?? c.linkval ?? null;
+      if (lMin !== null && (lvl === null || lvl < lMin)) return false;
+      if (lMax !== null && (lvl === null || lvl > lMax)) return false;
+
+      if (aMin !== null && (c.atk === undefined || c.atk < aMin)) return false;
+      if (aMax !== null && (c.atk === undefined || c.atk > aMax)) return false;
+
+      if (dMin !== null && (c.def === undefined || c.def < dMin)) return false;
+      if (dMax !== null && (c.def === undefined || c.def > dMax)) return false;
+
+      if (sMin !== null && (c.scale === undefined || c.scale < sMin)) return false;
+      if (sMax !== null && (c.scale === undefined || c.scale > sMax)) return false;
+
+      if (f.linkMarkers.size > 0) {
+        if (!c.linkmarkers) return false;
+        for (const m of f.linkMarkers) {
+          if (!c.linkmarkers.includes(m)) return false;
+        }
+      }
+
+      if (f.format) {
+        if (c._formats) {
+          if (!c._formats.map(x => x.toLowerCase()).includes(f.format.toLowerCase())) return false;
+        } else if (f.format === "goat" && !c.banlist_info?.ban_goat) {
+          // If misc_info isn't loaded, approximate goat check only if ban_goat exists
+          return false;
+        }
+      }
+
+      if (f.banStatus) {
+        const status = c.banlist_info?.[f.banSystem] || "Unlimited";
+        if (status !== f.banStatus) return false;
+      }
+
+      return true;
+    });
+
+    // Sort
+    out.sort((a, b) => {
+      switch (f.sort) {
+        case "name_desc": return (b.name || "").localeCompare(a.name || "");
+        case "atk_desc": return (b.atk ?? -1) - (a.atk ?? -1);
+        case "atk_asc": return (a.atk ?? 999999) - (b.atk ?? 999999);
+        case "def_desc": return (b.def ?? -1) - (a.def ?? -1);
+        case "level_desc": return ((b.level ?? b.linkval ?? -1) - (a.level ?? a.linkval ?? -1));
+        case "date_desc": return (b._tcgDate || "").localeCompare(a._tcgDate || "");
+        case "date_asc": return (a._tcgDate || "9999").localeCompare(b._tcgDate || "9999");
+        case "price_desc": return b._price - a._price;
+        case "views_desc": return b._views - a._views;
+        case "id_asc": return (a.id || 0) - (b.id || 0);
+        case "name_asc":
+        default: return (a.name || "").localeCompare(b.name || "");
+      }
+    });
+
+    state.filteredCards = out;
+    state.page = 1;
+    renderResults();
+  }
+
+  // Render Grid or List + Pagination
+  function renderResults() {
+    const total = state.filteredCards.length;
+    $("resultCount").textContent = total.toLocaleString();
+
+    const container = $("cardsContainer");
+    const empty = $("emptyState");
+    const pagBar = $("paginationBar");
+
+    if (total === 0) {
+      container.innerHTML = "";
+      empty.classList.remove("hidden");
+      empty.classList.add("flex");
+      pagBar.classList.add("hidden");
+      return;
+    }
+
+    empty.classList.add("hidden");
+    empty.classList.remove("flex");
+    pagBar.classList.remove("hidden");
+
+    const totalPages = Math.max(1, Math.ceil(total / state.pageSize));
+    if (state.page > totalPages) state.page = totalPages;
+    const start = (state.page - 1) * state.pageSize;
+    const slice = state.filteredCards.slice(start, start + state.pageSize);
+
+    if (state.viewMode === "grid") {
+      container.className = "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-3";
+      container.innerHTML = slice.map(c => renderGridCard(c)).join("");
+    } else {
+      container.className = "bg-[#111622] border border-slate-800 rounded-xl overflow-x-auto";
+      container.innerHTML = `
+        <table class="w-full text-left border-collapse text-xs">
+          <thead class="bg-[#0d111a] text-slate-400 uppercase text-[10px] tracking-wider border-b border-slate-800">
+            <tr>
+              <th class="py-2.5 px-3">Card</th>
+              <th class="py-2.5 px-3">Type</th>
+              <th class="py-2.5 px-3">Attr / Subtype</th>
+              <th class="py-2.5 px-3">Stats</th>
+              <th class="py-2.5 px-3">Archetype</th>
+              <th class="py-2.5 px-3">TCG Price</th>
+              <th class="py-2.5 px-3 text-right">Actions</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/80">
+            ${slice.map(c => renderListRow(c)).join("")}
+          </tbody>
+        </table>
+      `;
+    }
+
+    renderPagination(total, totalPages, start);
+    if (window.lucide) lucide.createIcons();
+  }
+
+  function getBanBadgeHtml(card) {
+    const status = card.banlist_info?.[state.filters.banSystem];
+    if (!status) return "";
+    if (status === "Forbidden") return `<span class="ban-0 px-1.5 py-0.5 rounded text-[10px] font-bold">0</span>`;
+    if (status === "Limited") return `<span class="ban-1 px-1.5 py-0.5 rounded text-[10px] font-bold">1</span>`;
+    if (status === "Semi-Limited") return `<span class="ban-2 px-1.5 py-0.5 rounded text-[10px] font-bold">2</span>`;
+    return "";
+  }
+
+  function renderGridCard(c) {
+    const img = c.card_images?.[0]?.image_url_small || c.card_images?.[0]?.image_url || CARD_BACK_SVG;
+    const frameCls = getFrameClass(c);
+    const isFav = state.favorites.has(c.id);
+    const banBadge = getBanBadgeHtml(c);
+    const statsText = c.atk !== undefined
+      ? `ATK ${c.atk}${c.def !== undefined ? ` / DEF ${c.def}` : (c.linkval ? ` / L-${c.linkval}` : "")}`
+      : (c.race ? `${c.race} ${c.type.replace(" Card", "")}` : c.type);
+
+    return `
+      <div data-card-id="${c.id}" class="card-tile ${frameCls} group relative bg-[#121722] border-2 rounded-xl overflow-hidden flex flex-col cursor-pointer">
+        <div class="relative aspect-[421/614] bg-slate-950 overflow-hidden">
+          <img src="${escapeHtml(img)}" alt="${escapeHtml(c.name)}" loading="lazy"
+            onerror="this.onerror=null;this.src='${CARD_BACK_SVG}'"
+            class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-200" />
+          <div class="absolute top-1.5 left-1.5 flex items-center gap-1">
+            ${banBadge}
+            ${c.attribute ? `<span class="attr-${c.attribute} px-1.5 py-0.5 rounded text-[9px] font-bold border">${c.attribute}</span>` : ""}
+          </div>
+          <button type="button" data-fav-id="${c.id}" title="Favorite"
+            class="absolute top-1.5 right-1.5 p-1 rounded-md bg-black/65 hover:bg-black/90 text-xs cursor-pointer ${isFav ? "text-amber-400" : "text-slate-300 opacity-0 group-hover:opacity-100"} transition">
+            <i data-lucide="star" class="w-3.5 h-3.5 ${isFav ? "fill-amber-400" : ""}"></i>
+          </button>
+          ${c.level !== undefined ? `<span class="absolute bottom-1.5 left-1.5 px-1.5 py-0.5 rounded bg-black/75 text-amber-300 text-[10px] font-bold">★ ${c.level}</span>` : ""}
+          ${c._price > 0 ? `<span class="absolute bottom-1.5 right-1.5 px-1.5 py-0.5 rounded bg-black/75 text-emerald-300 text-[10px] font-semibold">$${c._price.toFixed(2)}</span>` : ""}
+        </div>
+        <div class="p-2 flex-1 flex flex-col justify-between gap-1 bg-[#121722]">
+          <div class="text-xs font-bold text-slate-100 line-clamp-1" title="${escapeHtml(c.name)}">${escapeHtml(c.name)}</div>
+          <div class="text-[10px] text-slate-400 truncate">${escapeHtml(statsText)}</div>
+        </div>
+      </div>
+    `;
+  }
+
+  function renderListRow(c) {
+    const img = c.card_images?.[0]?.image_url_small || CARD_BACK_SVG;
+    const isFav = state.favorites.has(c.id);
+    const banBadge = getBanBadgeHtml(c);
+    const stats = c.atk !== undefined
+      ? `${c.level !== undefined ? `Lv.${c.level} · ` : (c.linkval ? `Link-${c.linkval} · ` : "")}${c.atk}/${c.def ?? "-"}`
+      : "—";
+
+    return `
+      <tr data-card-id="${c.id}" class="hover:bg-[#182032] cursor-pointer transition">
+        <td class="py-2 px-3">
+          <div class="flex items-center gap-2.5">
+            <img src="${escapeHtml(img)}" alt="" loading="lazy" onerror="this.onerror=null;this.src='${CARD_BACK_SVG}'" class="w-8 h-11 object-cover rounded border border-slate-700 shrink-0" />
+            <div class="min-w-0">
+              <div class="font-bold text-slate-100 truncate max-w-[220px]">${escapeHtml(c.name)} ${banBadge}</div>
+              <div class="text-[10px] text-slate-500">#${c.id}</div>
+            </div>
+          </div>
+        </td>
+        <td class="py-2 px-3 text-slate-300 whitespace-nowrap">${escapeHtml(c.type)}</td>
+        <td class="py-2 px-3 whitespace-nowrap">
+          ${c.attribute ? `<span class="attr-${c.attribute} px-1.5 py-0.5 rounded text-[10px] font-bold border mr-1">${c.attribute}</span>` : ""}
+          <span class="text-slate-300">${escapeHtml(c.race || "—")}</span>
+        </td>
+        <td class="py-2 px-3 text-slate-200 font-medium whitespace-nowrap">${escapeHtml(stats)}</td>
+        <td class="py-2 px-3 text-amber-300/90 whitespace-nowrap">${escapeHtml(c.archetype || "—")}</td>
+        <td class="py-2 px-3 text-emerald-300 font-semibold whitespace-nowrap">${c._price > 0 ? `$${c._price.toFixed(2)}` : "—"}</td>
+        <td class="py-2 px-3 text-right whitespace-nowrap">
+          <button type="button" data-fav-id="${c.id}" class="p-1 rounded hover:bg-slate-700 ${isFav ? "text-amber-400" : "text-slate-400"} cursor-pointer">
+            <i data-lucide="star" class="w-3.5 h-3.5 ${isFav ? "fill-amber-400" : ""}"></i>
+          </button>
+          <button type="button" data-add-deck-id="${c.id}" class="ml-1 px-2 py-1 rounded bg-amber-500/20 hover:bg-amber-500/35 text-amber-300 text-[11px] font-semibold cursor-pointer">+ Deck</button>
+        </td>
+      </tr>
+    `;
+  }
+
+  function renderPagination(total, totalPages, start) {
+    const end = Math.min(total, start + state.pageSize);
+    $("pageInfo").textContent = `Showing ${(start + 1).toLocaleString()}–${end.toLocaleString()} of ${total.toLocaleString()} · Page ${state.page} of ${totalPages}`;
+
+    const btns = [];
+    const addBtn = (label, targetPage, disabled = false, active = false) => {
+      btns.push(`<button type="button" data-page="${targetPage}" ${disabled ? "disabled" : ""}
+        class="px-2.5 py-1 rounded-md border text-xs font-medium cursor-pointer ${
+          active
+            ? "bg-amber-500 border-amber-400 text-slate-950 font-bold"
+            : disabled
+              ? "bg-slate-900 border-slate-800 text-slate-600 cursor-not-allowed"
+              : "bg-[#161d2c] border-slate-700 text-slate-200 hover:bg-slate-700"
+        }">${label}</button>`);
+    };
+
+    addBtn("«", 1, state.page === 1);
+    addBtn("Prev", state.page - 1, state.page === 1);
+
+    const windowStart = Math.max(1, state.page - 2);
+    const windowEnd = Math.min(totalPages, state.page + 2);
+    for (let p = windowStart; p <= windowEnd; p++) {
+      addBtn(String(p), p, false, p === state.page);
+    }
+
+    addBtn("Next", state.page + 1, state.page === totalPages);
+    addBtn("»", totalPages, state.page === totalPages);
+
+    $("pageButtons").innerHTML = btns.join("");
+  }
+
+  // Card Detail Modal
+  function openCardModal(cardId) {
+    const card = state.allCards.find(c => c.id === cardId);
+    if (!card) return;
+    state.activeModalCard = card;
+    state.activeModalImgIdx = 0;
+    state.activeModalCropped = false;
+
+    const frameCls = getFrameClass(card);
+    $("modalFrameBadge").textContent = card.frameType || card.type;
+    $("modalFrameBadge").className = `px-2 py-0.5 rounded text-[11px] font-bold uppercase tracking-wide text-white shrink-0 ${frameCls}`;
+    $("modalFrameBadge").style.backgroundColor = "var(--frame-badge, #334155)";
+    $("modalCardName").textContent = card.name;
+
+    updateModalFavIcon();
+    updateModalArtwork();
+
+    // Alt arts
+    const imgs = card.card_images || [];
+    $("modalAltArts").innerHTML = imgs.length > 1
+      ? imgs.map((im, idx) => `<button type="button" data-alt-idx="${idx}" class="px-2 py-1 rounded text-[11px] font-semibold border cursor-pointer ${idx === 0 ? "bg-amber-500 text-slate-950 border-amber-400" : "bg-slate-800 text-slate-300 border-slate-700"}">Art ${idx + 1}</button>`).join("")
+      : "";
+
+    $("toggleCropBtn").textContent = "Cropped Art";
+    $("modalExternalLink").href = card.ygoprodeck_url || `https://ygoprodeck.com/card-database/?&name=${encodeURIComponent(card.name)}`;
+
+    // Meta grid
+    const metaItems = [
+      ["Passcode", `#${card.id}`],
+      ["Card Type", card.type],
+      card.attribute ? ["Attribute", card.attribute] : null,
+      card.race ? ["Type / Subtype", card.race] : null,
+      card.level !== undefined ? [card.frameType === "xyz" ? "Rank" : "Level", `★ ${card.level}`] : null,
+      card.linkval !== undefined ? ["Link Rating", `LINK-${card.linkval}`] : null,
+      card.scale !== undefined ? ["Pendulum Scale", `⬦ ${card.scale}`] : null,
+      card.atk !== undefined ? ["ATK", card.atk] : null,
+      card.def !== undefined ? ["DEF", card.def] : null,
+      card.archetype ? ["Archetype", card.archetype, true] : null,
+      card._tcgDate && card._tcgDate !== "0000-00-00" ? ["TCG Release", card._tcgDate] : null,
+      card.misc_info?.[0]?.treated_as ? ["Treated As", card.misc_info[0].treated_as] : null
+    ].filter(Boolean);
+
+    $("modalMetaGrid").innerHTML = metaItems.map(([k, v, isArch]) => `
+      <div class="bg-[#161d2c] border border-slate-800 rounded-lg px-2.5 py-2">
+        <div class="text-[10px] uppercase tracking-wider text-slate-400">${escapeHtml(k)}</div>
+        ${isArch
+          ? `<button type="button" data-filter-arch="${escapeHtml(v)}" class="text-xs font-bold text-amber-400 hover:underline text-left cursor-pointer">${escapeHtml(v)}</button>`
+          : `<div class="text-xs font-bold text-slate-100">${escapeHtml(v)}</div>`
+        }
+      </div>
+    `).join("");
+
+    // Link Markers diagram
+    const linkBox = $("modalLinkDiagram");
+    if (card.linkmarkers && card.linkmarkers.length > 0) {
+      const dirs = ["Top-Left", "Top", "Top-Right", "Left", "CENTER", "Right", "Bottom-Left", "Bottom", "Bottom-Right"];
+      const arrows = { "Top-Left": "↖", "Top": "↑", "Top-Right": "↗", "Left": "←", "Right": "→", "Bottom-Left": "↙", "Bottom": "↓", "Bottom-Right": "↘" };
+      linkBox.classList.remove("hidden");
+      linkBox.classList.add("flex");
+      linkBox.innerHTML = `
+        <div class="grid grid-cols-3 gap-1 p-1.5 bg-[#0d111a] rounded-lg border border-slate-700 shrink-0">
+          ${dirs.map(d => d === "CENTER"
+            ? `<div class="w-5 h-5 flex items-center justify-center text-[9px] font-bold text-sky-400">L${card.linkval || ""}</div>`
+            : `<div class="w-5 h-5 flex items-center justify-center rounded text-[11px] ${card.linkmarkers.includes(d) ? "bg-sky-600 text-white font-bold" : "bg-slate-800/60 text-slate-600"}">${arrows[d]}</div>`
+          ).join("")}
+        </div>
+        <div class="text-xs text-slate-300">
+          <div class="font-bold text-sky-300">Link Arrows</div>
+          <div>${escapeHtml(card.linkmarkers.join(", "))}</div>
+        </div>
+      `;
+    } else {
+      linkBox.classList.add("hidden");
+      linkBox.classList.remove("flex");
+    }
+
+    $("modalCardDesc").textContent = card.desc || "No description available.";
+
+    // Banlist row
+    const banRow = $("modalBanlistRow");
+    if (card.banlist_info) {
+      const entries = Object.entries(card.banlist_info).map(([k, v]) => {
+        const label = k.replace("ban_", "").toUpperCase();
+        const cls = v === "Forbidden" ? "ban-0" : v === "Limited" ? "ban-1" : "ban-2";
+        return `<span class="${cls} px-2.5 py-1 rounded-md text-xs font-bold">${label}: ${escapeHtml(v)}</span>`;
+      });
+      banRow.innerHTML = entries.join("");
+      banRow.classList.remove("hidden");
+      banRow.classList.add("flex");
+    } else {
+      banRow.classList.add("hidden");
+      banRow.classList.remove("flex");
+    }
+
+    // Prices
+    const p = card.card_prices?.[0] || {};
+    const priceRows = [
+      ["TCGplayer", p.tcgplayer_price, "$"],
+      ["Cardmarket", p.cardmarket_price, "€"],
+      ["eBay", p.ebay_price, "$"],
+      ["Amazon", p.amazon_price, "$"],
+      ["CoolStuffInc", p.coolstuffinc_price, "$"]
+    ].filter(([, val]) => val && parseFloat(val) > 0);
+
+    $("modalPricesGrid").innerHTML = priceRows.length > 0
+      ? priceRows.map(([vendor, val, cur]) => `
+          <div class="bg-[#0d111a] border border-slate-800 rounded-lg px-2.5 py-1.5 flex items-center justify-between">
+            <span class="text-slate-400">${vendor}</span>
+            <span class="font-bold text-emerald-400">${cur}${escapeHtml(val)}</span>
+          </div>
+        `).join("")
+      : `<div class="text-slate-500 col-span-full">No vendor pricing data available.</div>`;
+
+    // Sets
+    $("modalSetSearch").value = "";
+    renderModalSets(card.card_sets || []);
+
+    $("cardModal").classList.remove("hidden");
+    if (window.lucide) lucide.createIcons();
+  }
+
+  function updateModalArtwork() {
+    const card = state.activeModalCard;
+    if (!card) return;
+    const imgObj = card.card_images?.[state.activeModalImgIdx] || card.card_images?.[0];
+    const url = imgObj
+      ? (state.activeModalCropped ? (imgObj.image_url_cropped || imgObj.image_url) : (imgObj.image_url || imgObj.image_url_small))
+      : CARD_BACK_SVG;
+    const imgEl = $("modalCardImg");
+    imgEl.onerror = () => { imgEl.onerror = null; imgEl.src = CARD_BACK_SVG; };
+    imgEl.src = url;
+  }
+
+  function updateModalFavIcon() {
+    if (!state.activeModalCard) return;
+    const isFav = state.favorites.has(state.activeModalCard.id);
+    const btn = $("modalFavBtn");
+    btn.classList.toggle("text-amber-400", isFav);
+    btn.innerHTML = `<i data-lucide="star" class="w-4 h-4 ${isFav ? "fill-amber-400" : ""}"></i>`;
+    if (window.lucide) lucide.createIcons();
+  }
+
+  function renderModalSets(sets) {
+    const q = $("modalSetSearch").value.trim().toLowerCase();
+    const filtered = q
+      ? sets.filter(s => `${s.set_name} ${s.set_code} ${s.set_rarity}`.toLowerCase().includes(q))
+      : sets;
+    $("modalSetsCount").textContent = sets.length;
+    $("modalSetsList").innerHTML = filtered.length > 0
+      ? filtered.map(s => `
+          <div class="py-1.5 flex items-center justify-between gap-2">
+            <div class="min-w-0">
+              <div class="font-medium text-slate-200 truncate">${escapeHtml(s.set_name)}</div>
+              <div class="text-[10px] text-slate-400">${escapeHtml(s.set_code)} · ${escapeHtml(s.set_rarity)}</div>
+            </div>
+            <span class="text-emerald-400 font-semibold shrink-0">${s.set_price && parseFloat(s.set_price) > 0 ? `$${s.set_price}` : "—"}</span>
+          </div>
+        `).join("")
+      : `<div class="py-3 text-slate-500 text-center">No matching sets found.</div>`;
+  }
+
+  // Deck Builder logic
+  function addCardToDeck(cardId, explicitTarget = null) {
+    const card = state.allCards.find(c => c.id === cardId);
+    if (!card) return;
+    const target = explicitTarget || (isExtraDeckCard(card) ? "extra" : state.deckTarget === "extra" ? "main" : state.deckTarget);
+    const maxLen = target === "main" ? 60 : 15;
+    if (state.deck[target].length >= maxLen) {
+      showToast(`${target.toUpperCase()} Deck is full (${maxLen} cards max).`);
+      return;
+    }
+    const copies = [...state.deck.main, ...state.deck.extra, ...state.deck.side].filter(x => x.name === card.name).length;
+    if (copies >= 3) {
+      showToast(`Maximum 3 copies of "${card.name}" allowed.`);
+      return;
+    }
+    state.deck[target].push({
+      id: card.id,
+      name: card.name,
+      frameType: card.frameType,
+      type: card.type,
+      image_url_small: card.card_images?.[0]?.image_url_small || ""
+    });
+    saveDeck();
+    renderDeckDrawer();
+    showToast(`Added "${card.name}" to ${target.toUpperCase()} Deck.`);
+  }
+
+  function renderDeckDrawer() {
+    const list = state.deck[state.deckTarget];
+    const body = $("deckListBody");
+    if (list.length === 0) {
+      body.innerHTML = `<div class="text-center text-xs text-slate-500 py-12">No cards in ${state.deckTarget.toUpperCase()} Deck yet. Click "+ Deck" on any card to add it.</div>`;
+      return;
+    }
+    body.innerHTML = list.map((c, idx) => `
+      <div class="flex items-center justify-between gap-2 bg-[#161d2c] border border-slate-800 rounded-lg p-2">
+        <div class="flex items-center gap-2 min-w-0 cursor-pointer" data-open-deck-card="${c.id}">
+          <img src="${escapeHtml(c.image_url_small || CARD_BACK_SVG)}" onerror="this.onerror=null;this.src='${CARD_BACK_SVG}'" class="w-7 h-10 object-cover rounded border border-slate-700 shrink-0" />
+          <div class="min-w-0">
+            <div class="text-xs font-bold text-slate-100 truncate">${escapeHtml(c.name)}</div>
+            <div class="text-[10px] text-slate-400">${escapeHtml(c.type)} · #${c.id}</div>
+          </div>
+        </div>
+        <button type="button" data-remove-deck-idx="${idx}" class="p-1 rounded bg-slate-800 hover:bg-rose-900/70 text-slate-300 hover:text-rose-200 cursor-pointer">
+          <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+        </button>
+      </div>
+    `).join("");
+    if (window.lucide) lucide.createIcons();
+  }
+
+  function exportYdk() {
+    const lines = ["#created by Millennium Archive", "#main", ...state.deck.main.map(c => c.id), "#extra", ...state.deck.extra.map(c => c.id), "!side", ...state.deck.side.map(c => c.id)];
+    const blob = new Blob([lines.join("\n")], { type: "text/plain" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "millennium_archive_deck.ydk";
+    a.click();
+    URL.revokeObjectURL(a.href);
+    showToast("Exported deck as .ydk file!");
+  }
+
+  // Stats Modal
+  function openStatsModal() {
+    const cards = state.allCards;
+    const total = cards.length || 1;
+    let monsters = 0, spells = 0, traps = 0, other = 0;
+    const frames = {};
+    for (const c of cards) {
+      if (c.type === "Spell Card") spells++;
+      else if (c.type === "Trap Card") traps++;
+      else if (c.type === "Token" || c.type === "Skill Card") other++;
+      else monsters++;
+      const f = c.frameType || "other";
+      frames[f] = (frames[f] || 0) + 1;
+    }
+
+    const sortedFrames = Object.entries(frames).sort((a, b) => b[1] - a[1]);
+    $("statsBody").innerHTML = `
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+        <div class="bg-[#161d2c] border border-slate-800 rounded-xl p-3">
+          <div class="text-slate-400">Total Cards</div>
+          <div class="text-lg font-extrabold text-amber-400">${cards.length.toLocaleString()}</div>
+        </div>
+        <div class="bg-[#161d2c] border border-slate-800 rounded-xl p-3">
+          <div class="text-slate-400">Monsters</div>
+          <div class="text-lg font-extrabold text-orange-400">${monsters.toLocaleString()}</div>
+        </div>
+        <div class="bg-[#161d2c] border border-slate-800 rounded-xl p-3">
+          <div class="text-slate-400">Spells</div>
+          <div class="text-lg font-extrabold text-emerald-400">${spells.toLocaleString()}</div>
+        </div>
+        <div class="bg-[#161d2c] border border-slate-800 rounded-xl p-3">
+          <div class="text-slate-400">Traps</div>
+          <div class="text-lg font-extrabold text-pink-400">${traps.toLocaleString()}</div>
+        </div>
+      </div>
+      <div class="bg-[#161d2c] border border-slate-800 rounded-xl p-3.5 space-y-2">
+        <div class="font-bold text-slate-200 mb-1">Frame Type Distribution</div>
+        ${sortedFrames.map(([frame, count]) => {
+          const pct = ((count / total) * 100).toFixed(1);
+          return `
+            <div>
+              <div class="flex justify-between text-[11px] mb-0.5">
+                <span class="capitalize text-slate-300 font-medium">${escapeHtml(frame.replace("_", " "))}</span>
+                <span class="text-slate-400">${count.toLocaleString()} (${pct}%)</span>
+              </div>
+              <div class="h-1.5 bg-slate-800 rounded-full overflow-hidden">
+                <div class="h-full bg-amber-400 rounded-full" style="width:${pct}%"></div>
+              </div>
+            </div>
+          `;
+        }).join("")}
+      </div>
+    `;
+    $("statsModal").classList.remove("hidden");
+  }
+
+  function resetAllFilters() {
+    state.filters.query = "";
+    state.filters.tab = "all";
+    state.filters.type = "";
+    state.filters.attributes.clear();
+    state.filters.race = "";
+    state.filters.archetype = "";
+    state.filters.levelMin = "";
+    state.filters.levelMax = "";
+    state.filters.atkMin = "";
+    state.filters.atkMax = "";
+    state.filters.defMin = "";
+    state.filters.defMax = "";
+    state.filters.scaleMin = "";
+    state.filters.scaleMax = "";
+    state.filters.linkMarkers.clear();
+    state.filters.format = "";
+    state.filters.banStatus = "";
+
+    $("searchInput").value = "";
+    $("clearSearchBtn").classList.add("hidden");
+    $("filterType").value = "";
+    $("filterRace").value = "";
+    $("filterArchetype").value = "";
+    $("filterLevelMin").value = "";
+    $("filterLevelMax").value = "";
+    $("filterAtkMin").value = "";
+    $("filterAtkMax").value = "";
+    $("filterDefMin").value = "";
+    $("filterDefMax").value = "";
+    $("filterScaleMin").value = "";
+    $("filterScaleMax").value = "";
+    $("filterFormat").value = "";
+    $("filterBanStatus").value = "";
+
+    document.querySelectorAll(".attr-filter-btn").forEach(b => b.className = "attr-filter-btn px-2 py-1 rounded text-[11px] font-semibold border border-slate-700 bg-slate-800/70 text-slate-300 cursor-pointer");
+    document.querySelectorAll(".link-arrow-btn").forEach(b => b.classList.remove("active"));
+    document.querySelectorAll(".tab-btn").forEach(b => {
+      const isAll = b.dataset.tab === "all";
+      b.className = `tab-btn px-3 py-1 rounded-md text-xs whitespace-nowrap cursor-pointer ${isAll ? "font-semibold bg-amber-500 text-slate-950" : "font-medium bg-slate-800/80 text-slate-300 hover:bg-slate-700"}`;
+    });
+
+    applyFilters();
+  }
+
+  // Event Wiring
+  function bindEvents() {
+    let searchTimer;
+    $("searchInput").addEventListener("input", (e) => {
+      const val = e.target.value;
+      $("clearSearchBtn").classList.toggle("hidden", !val);
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(() => {
+        state.filters.query = val;
+        applyFilters();
+      }, 160);
+    });
+
+    $("clearSearchBtn").addEventListener("click", () => {
+      $("searchInput").value = "";
+      $("clearSearchBtn").classList.add("hidden");
+      state.filters.query = "";
+      applyFilters();
+    });
+
+    // Category Tabs
+    document.querySelectorAll(".tab-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        state.filters.tab = btn.dataset.tab;
+        document.querySelectorAll(".tab-btn").forEach(b => {
+          const active = b === btn;
+          b.className = `tab-btn px-3 py-1 rounded-md text-xs whitespace-nowrap cursor-pointer inline-flex items-center gap-1 ${active ? "font-semibold bg-amber-500 text-slate-950" : "font-medium bg-slate-800/80 text-slate-300 hover:bg-slate-700"}`;
+        });
+        applyFilters();
+      });
+    });
+
+    // Attribute pills
+    document.querySelectorAll(".attr-filter-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const attr = btn.dataset.attr;
+        if (state.filters.attributes.has(attr)) {
+          state.filters.attributes.delete(attr);
+          btn.className = "attr-filter-btn px-2 py-1 rounded text-[11px] font-semibold border border-slate-700 bg-slate-800/70 text-slate-300 cursor-pointer";
+        } else {
+          state.filters.attributes.add(attr);
+          btn.className = `attr-filter-btn attr-${attr} px-2 py-1 rounded text-[11px] font-semibold border cursor-pointer`;
+        }
+        applyFilters();
+      });
+    });
+
+    // Link arrows
+    document.querySelectorAll(".link-arrow-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const dir = btn.dataset.link;
+        if (state.filters.linkMarkers.has(dir)) {
+          state.filters.linkMarkers.delete(dir);
+          btn.classList.remove("active");
+        } else {
+          state.filters.linkMarkers.add(dir);
+          btn.classList.add("active");
+        }
+        applyFilters();
+      });
+    });
+
+    // Select & Numeric filters
+    const filterBindings = [
+      ["filterType", "type", "change"],
+      ["filterRace", "race", "change"],
+      ["filterArchetype", "archetype", "change"],
+      ["filterLevelMin", "levelMin", "input"],
+      ["filterLevelMax", "levelMax", "input"],
+      ["filterAtkMin", "atkMin", "input"],
+      ["filterAtkMax", "atkMax", "input"],
+      ["filterDefMin", "defMin", "input"],
+      ["filterDefMax", "defMax", "input"],
+      ["filterScaleMin", "scaleMin", "input"],
+      ["filterScaleMax", "scaleMax", "input"],
+      ["filterFormat", "format", "change"],
+      ["filterBanSystem", "banSystem", "change"],
+      ["filterBanStatus", "banStatus", "change"],
+      ["sortSelect", "sort", "change"]
+    ];
+    for (const [elId, key, ev] of filterBindings) {
+      $(elId).addEventListener(ev, (e) => {
+        state.filters[key] = e.target.value;
+        applyFilters();
+      });
+    }
+
+    $("pageSizeSelect").addEventListener("change", (e) => {
+      state.pageSize = Number(e.target.value);
+      state.page = 1;
+      renderResults();
+    });
+
+    $("viewGridBtn").addEventListener("click", () => {
+      state.viewMode = "grid";
+      $("viewGridBtn").className = "px-2 py-1 rounded-md bg-amber-500 text-slate-950 text-xs font-semibold cursor-pointer";
+      $("viewListBtn").className = "px-2 py-1 rounded-md text-slate-400 hover:text-white text-xs font-semibold cursor-pointer";
+      renderResults();
+    });
+
+    $("viewListBtn").addEventListener("click", () => {
+      state.viewMode = "list";
+      $("viewListBtn").className = "px-2 py-1 rounded-md bg-amber-500 text-slate-950 text-xs font-semibold cursor-pointer";
+      $("viewGridBtn").className = "px-2 py-1 rounded-md text-slate-400 hover:text-white text-xs font-semibold cursor-pointer";
+      renderResults();
+    });
+
+    // Event delegation on cards container
+    $("cardsContainer").addEventListener("click", (e) => {
+      const favBtn = e.target.closest("[data-fav-id]");
+      if (favBtn) {
+        e.stopPropagation();
+        const id = Number(favBtn.dataset.favId);
+        if (state.favorites.has(id)) state.favorites.delete(id);
+        else state.favorites.add(id);
+        saveFavorites();
+        renderResults();
+        return;
+      }
+      const addDeckBtn = e.target.closest("[data-add-deck-id]");
+      if (addDeckBtn) {
+        e.stopPropagation();
+        addCardToDeck(Number(addDeckBtn.dataset.addDeckId));
+        return;
+      }
+      const cardEl = e.target.closest("[data-card-id]");
+      if (cardEl) {
+        openCardModal(Number(cardEl.dataset.cardId));
+      }
+    });
+
+    // Pagination delegation
+    $("paginationBar").addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-page]");
+      if (!btn || btn.disabled) return;
+      state.page = Number(btn.dataset.page);
+      renderResults();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Modal controls
+    $("closeCardModalBtn").addEventListener("click", () => $("cardModal").classList.add("hidden"));
+    $("cardModal").addEventListener("click", (e) => {
+      if (e.target === $("cardModal")) $("cardModal").classList.add("hidden");
+    });
+
+    $("modalFavBtn").addEventListener("click", () => {
+      if (!state.activeModalCard) return;
+      const id = state.activeModalCard.id;
+      if (state.favorites.has(id)) state.favorites.delete(id);
+      else state.favorites.add(id);
+      saveFavorites();
+      updateModalFavIcon();
+      renderResults();
+    });
+
+    $("modalAltArts").addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-alt-idx]");
+      if (!btn) return;
+      state.activeModalImgIdx = Number(btn.dataset.altIdx);
+      updateModalArtwork();
+      document.querySelectorAll("#modalAltArts button").forEach((b, i) => {
+        b.className = `px-2 py-1 rounded text-[11px] font-semibold border cursor-pointer ${i === state.activeModalImgIdx ? "bg-amber-500 text-slate-950 border-amber-400" : "bg-slate-800 text-slate-300 border-slate-700"}`;
+      });
+    });
+
+    $("toggleCropBtn").addEventListener("click", () => {
+      state.activeModalCropped = !state.activeModalCropped;
+      $("toggleCropBtn").textContent = state.activeModalCropped ? "Full Card" : "Cropped Art";
+      updateModalArtwork();
+    });
+
+    $("copyPasscodeBtn").addEventListener("click", async () => {
+      if (!state.activeModalCard) return;
+      const txt = String(state.activeModalCard.id);
+      try {
+        await navigator.clipboard.writeText(txt);
+      } catch (_) {
+        const ta = document.createElement("textarea");
+        ta.value = txt;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        ta.remove();
+      }
+      showToast(`Copied passcode #${txt}`);
+    });
+
+    $("addToDeckModalBtn").addEventListener("click", () => {
+      if (state.activeModalCard) addCardToDeck(state.activeModalCard.id);
+    });
+
+    $("modalMetaGrid").addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-filter-arch]");
+      if (!btn) return;
+      const arch = btn.dataset.filterArch;
+      $("cardModal").classList.add("hidden");
+      $("filterArchetype").value = arch;
+      state.filters.archetype = arch;
+      applyFilters();
+    });
+
+    $("modalSetSearch").addEventListener("input", () => {
+      if (state.activeModalCard) renderModalSets(state.activeModalCard.card_sets || []);
+    });
+
+    // Random Card
+    $("randomCardBtn").addEventListener("click", () => {
+      const pool = state.filteredCards.length > 0 ? state.filteredCards : state.allCards;
+      if (pool.length === 0) return;
+      const pick = pool[Math.floor(Math.random() * pool.length)];
+      openCardModal(pick.id);
+    });
+
+    // Reset Filters
+    $("resetFiltersBtn").addEventListener("click", resetAllFilters);
+    $("emptyResetBtn").addEventListener("click", resetAllFilters);
+
+    // Mobile Filter Drawer
+    $("mobileFilterToggle").addEventListener("click", () => {
+      const sb = $("filterSidebar");
+      sb.classList.remove("hidden");
+      sb.classList.add("fixed", "inset-y-0", "left-0", "z-50", "shadow-2xl");
+    });
+    $("closeMobileFilterBtn").addEventListener("click", () => {
+      const sb = $("filterSidebar");
+      sb.classList.add("hidden");
+      sb.classList.remove("fixed", "inset-y-0", "left-0", "z-50", "shadow-2xl");
+    });
+
+    // Deck Drawer
+    $("deckDrawerBtn").addEventListener("click", () => {
+      renderDeckDrawer();
+      $("deckDrawer").classList.remove("hidden");
+    });
+    $("closeDeckDrawerBtn").addEventListener("click", () => $("deckDrawer").classList.add("hidden"));
+    $("deckDrawer").addEventListener("click", (e) => {
+      if (e.target === $("deckDrawer")) $("deckDrawer").classList.add("hidden");
+    });
+
+    document.querySelectorAll(".deck-target-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        state.deckTarget = btn.dataset.deckTarget;
+        document.querySelectorAll(".deck-target-btn").forEach(b => {
+          const active = b === btn;
+          b.className = `deck-target-btn px-2.5 py-1 rounded text-xs cursor-pointer ${active ? "bg-amber-500 text-slate-950 font-bold" : "bg-slate-800 text-slate-300 font-medium"}`;
+        });
+        renderDeckDrawer();
+      });
+    });
+
+    $("deckListBody").addEventListener("click", (e) => {
+      const rem = e.target.closest("[data-remove-deck-idx]");
+      if (rem) {
+        state.deck[state.deckTarget].splice(Number(rem.dataset.removeDeckIdx), 1);
+        saveDeck();
+        renderDeckDrawer();
+        return;
+      }
+      const openBtn = e.target.closest("[data-open-deck-card]");
+      if (openBtn) {
+        $("deckDrawer").classList.add("hidden");
+        openCardModal(Number(openBtn.dataset.openDeckCard));
+      }
+    });
+
+    $("exportYdkBtn").addEventListener("click", exportYdk);
+    $("clearDeckBtn").addEventListener("click", () => {
+      state.deck = { main: [], extra: [], side: [] };
+      saveDeck();
+      renderDeckDrawer();
+      showToast("Deck cleared.");
+    });
+
+    // Stats Modal
+    $("statsBtn").addEventListener("click", openStatsModal);
+    $("closeStatsModalBtn").addEventListener("click", () => $("statsModal").classList.add("hidden"));
+    $("statsModal").addEventListener("click", (e) => {
+      if (e.target === $("statsModal")) $("statsModal").classList.add("hidden");
+    });
+
+    // Refresh & JSON Import
+    $("refreshDbBtn").addEventListener("click", () => loadDatabase(true));
+    $("retryFetchBtn").addEventListener("click", () => loadDatabase(true));
+    $("jsonImportInput").addEventListener("change", (e) => {
+      const file = e.target.files?.[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = async () => {
+        try {
+          const parsed = JSON.parse(reader.result);
+          const arr = Array.isArray(parsed) ? parsed : parsed.data;
+          if (!Array.isArray(arr)) throw new Error("Expected array or { data: [...] }");
+          await idbSet("all_cards_payload", { data: arr, savedAt: Date.now(), dbVer: null });
+          ingestCards(arr);
+          setStatus(`Imported ${arr.length.toLocaleString()} cards from local JSON.`, false, false);
+        } catch (_) {
+          showToast("Invalid JSON file format.");
+        }
+      };
+      reader.readAsText(file);
+    });
+  }
+
+  // Init
+  loadLocalPrefs();
+  bindEvents();
+  if (window.lucide) lucide.createIcons();
+  loadDatabase(false);
+})();
+</script>
+</body>
+</html>
